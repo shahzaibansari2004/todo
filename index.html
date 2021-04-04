@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahzaib TODO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+		<div class="container">
+			<h1>Todo List</h1>
+
+			<div class="buttonHolder">
+				<button onclick="handlers.toggleAll()">Toggle All</button>
+			</div>
+
+			<div class="buttonHolder">
+				<input class="line" id="addTodo" type="text" placeholder="Add things to be done">
+				<button onclick="handlers.addTodo()">Add</button>
+				<label>Add a Todo.</label>
+			</div>
+
+			<div class="buttonHolder">
+				<input  class="line"id="changeTodoText" type="text" placeholder="Change todo text">
+				<button onclick="handlers.changeTodo()">Change Todo</button>
+				<input id="changeTodoPos" type="number" placeholder="First item is 0.">
+				<label>Position from 0 to change.</label>
+			</div>
+
+			<div class="buttonHolder">
+					<button onclick="handlers.toggleCompleted()">Completed</button>
+					<input id="toggleCompletedPos" type="number" placeholder="First item is 0.">
+					<label>Position from 0 to toggle. </label>
+			</div>
+			 <ul>
+					<!-- todo's go here --> 
+			 </ul>
+			</div>
+  </body>
+</body>
+<script src="app.js"></script>
+</html>
